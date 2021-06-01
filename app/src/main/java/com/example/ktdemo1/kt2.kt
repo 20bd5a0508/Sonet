@@ -1,7 +1,7 @@
 package com.example.ktdemo1
 
 fun main(){
-    var fruit= arrayOf("apple","guava","pineapple")
+    /*var fruit= arrayOf("apple","guava","pineapple")
     for(i in fruit.indices){
         if (i%2==0)
         print(fruit[i]+" ")
@@ -28,19 +28,16 @@ fun main(){
     }
     var st:String="hey "
     st+="world"
-    print(st)
-    var n=5;
-    var k:Int=1
-    var res:String="Result  "
-    while(k<=n){
-        if(k%2==0){
-            res+=k
-            k++
-        }
-        else
-            res+="@"
-    }
-    print("$res")
-
-
+    print(st)*/
+    main2()
+}
+fun main2(){
+ var a:Int=33
+ var b:Int=32
+ var s: String? = readLine()
+ print(hello(a,b))
+ print(s)
+}
+fun hello(a:Int,b:Int):Int{
+    return a*b
 }
