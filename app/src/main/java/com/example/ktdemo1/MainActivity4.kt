@@ -31,18 +31,12 @@ class MainActivity4 : AppCompatActivity() {
         })
     }
 }
-fun add(a:Float,b:Float):Float{
-    return a+b
-}
-fun sub(a:Float,b:Float):Float{
-    return a-b
-}
-fun mul(a:Float,b:Float):Float{
-    return a*b
-}
-fun div(a:Float,b:Float):Float{
-    return a/b
-}
-fun mod(a:Float,b:Float):Float{
-    return a%b
-}
+fun add(a:Float,b:Float):Float= a+b
+
+fun sub(a:Float,b:Float):Float= a-b
+
+fun mul(a:Float,b:Float):Float= a*b
+
+fun div(a:Float,b:Float):Float= a/b
+
+fun mod(a:Float,b:Float):Float=  a%b
