@@ -32,7 +32,7 @@ class MainActivity5 : AppCompatActivity() {
         var day: String = randomDay()
         var food = Fishfood(day)
         var changeWater = ChangeWater(day, temp, dirt)
-        var res="Today is $day you need to feed $food \n Change Water : ${if (changeWater) "is needed" else "not needed"}"
+        var res="Today is $day you need to feed $food \n \nChange Water : ${if (changeWater) "is needed" else "not needed"}"
         return res
     }
 
