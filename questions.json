@@ -1,0 +1,21 @@
+[
+  {
+  "id":1,
+  "question":"c is a",
+  "optOne":"procedural paradigam",
+  "optTwo":"object oriented",
+  "optThree":"Function oriented",
+  "optFour":"logic oriented",
+  "answer":1
+},
+  {
+  "id":2,
+  "question":"c++ is a ",
+  "optOne":"procedural paradigam",
+  "optTwo":"object oriented",
+  "optThree":"Function oriented",
+  "optFour":"logic oriented",
+  "answer":1
+}
+
+]
