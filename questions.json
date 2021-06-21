@@ -2,19 +2,19 @@
   {
   "id":1,
   "question":"c is a",
-  "optOne":"procedural paradigam",
-  "optTwo":"object oriented",
-  "optThree":"Function oriented",
-  "optFour":"logic oriented",
+  "opt1":"procedural paradigam",
+  "opt2":"object oriented",
+  "opt3":"Function oriented",
+  "opt4":"logic oriented",
   "answer":1
 },
   {
   "id":2,
   "question":"c++ is a ",
-  "optOne":"procedural paradigam",
-  "optTwo":"object oriented",
-  "optThree":"Function oriented",
-  "optFour":"logic oriented",
+  "opt1":"procedural paradigam",
+  "opt2":"object oriented",
+  "opt3":"Function oriented",
+  "opt4":"logic oriented",
   "answer":1
 }
 
