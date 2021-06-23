@@ -23,14 +23,15 @@ class QuizActivity : AppCompatActivity(),View.OnClickListener {
     lateinit var optionlist:List<TextView>
     var score:Int=0
     var optionselected:Int=0
+    lateinit var end:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz)
         var utility:Utility= Utility()
 
-        //listofquestions=utility.getQuestions()
-        utility.getQuestionFromGithub()
+        listofquestions=utility.getQuestions()
+       // utility.getQuestionFromGithub()
         var name: String? =intent.getStringExtra("name")
         var q_name=findViewById<TextView>(R.id.qaname)
         q_name.text=name
@@ -44,6 +45,11 @@ class QuizActivity : AppCompatActivity(),View.OnClickListener {
         progressBar.max=listofquestions!!.size
         progressBar.progress=currentPos
         submit=findViewById<Button>(R.id.qanext)
+        end=findViewById<Button>(R.id.qaend)
+        end.setOnClickListener(View.OnClickListener {
+            var intent = Intent(this,SonetQuiz()::class.java)
+            startActivity(intent)
+        })
 
         optionlist= listOf<TextView>(opt1,opt2,opt3,opt4)
         setQuestions();
@@ -70,7 +76,7 @@ class QuizActivity : AppCompatActivity(),View.OnClickListener {
 
                     }
                     else{
-                        Toast.makeText(this,"choose a option",Toast.LENGTH_LONG).show()
+                        Toast.makeText(this,"choose a option",Toast.LENGTH_SHORT).show()
                     }
 
                 }
