@@ -12,7 +12,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KtDemo1">
-        <activity android:name=".NoteTakingScreen3Activity"></activity>
+        <activity android:name=".FragmentDemoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RoomDBDemoActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Student_OnlineClasses" />
+        <activity android:name=".StudentMainScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NoteTakingScreen3Activity" />
         <activity android:name=".NoteTakingScreen2Activity" />
         <activity
             android:name=".NoteTakingActivity"

@@ -1,5 +1,4 @@
 package com.example.ktdemo1
-
 import java.lang.Exception
 
 class Person {
