@@ -5,10 +5,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.example.ktdemo1.databinding.DemoFragment1Binding
 
 class fragment1:Fragment(R.layout.demo_fragment_1) {
     lateinit var binder:DemoFragment1Binding
+    lateinit var myVM: MyViewModel
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -20,11 +23,18 @@ class fragment1:Fragment(R.layout.demo_fragment_1) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        myVM= ViewModelProvider(requireActivity()).get(MyViewModel::class.java)
+
         binder.fragment1btn.setOnClickListener(View.OnClickListener {
             var fragmentManager = activity?.supportFragmentManager
             var fragmentTransaction = fragmentManager?.beginTransaction()
             fragmentTransaction?.replace(R.id.demo_fragment_container, fragment2())
             fragmentTransaction?.commit()
+        })
+        binder.vmBtnSave.setOnClickListener(View.OnClickListener {
+            var name=binder.vmNameEt.text.toString()
+            myVM.setData(name)
+
         })
     }
 
